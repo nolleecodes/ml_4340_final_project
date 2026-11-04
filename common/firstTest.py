@@ -14,7 +14,6 @@ dt_model = DecisionTreeClassifier(max_depth=3,random_state=42)
 dt_model.fit(X_train, y_train)
 print("dt trained")
 #plot trained model decision tree
-
 plt.figure(figsize=(20,10))
 plot_tree(dt_model, feature_names=X_train.columns, class_names=["No Flare", "Flare"],filled=True, fontsize=9)
 plt.title("Decision Tree for Solar Flare Prediction")
